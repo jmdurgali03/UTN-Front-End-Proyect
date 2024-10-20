@@ -1,8 +1,9 @@
-# React + Vite
+## Desafio elegido.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Elegi el propuesto por el docente. Una aplicacion de mensajeria, que consiste en la creacion de nuevos espacios de trabajos, nuevos canales de comunicacion y el correspondiente listado. 
 
-Currently, two official plugins are available:
+## Difucultades presentadas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El estilizado de la pagina por medio de CSS me tomo mayor tiempo del que yo estimaba. 
+Al principio, la estructuracion del proyecto (directorios, creacion de componentes) no tenia en claro si era lo correcto.
+El uso de hooks se fue haciendo cada vez mas claro al utilizarlos y guiandome de las clases. 

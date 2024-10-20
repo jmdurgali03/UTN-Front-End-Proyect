@@ -130,3 +130,114 @@
     background-color: #3f0e3f;
     color: #FFFFFF;
 }
+
+@media screen and (max-width: 640px) {
+    .home-ws-main {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .home-ws-main h1 {
+        font-size: 2rem;
+    }
+
+    .span-hero {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .workspaces-main-list {
+        width: 100%;
+        padding: 5px;
+        border: none;
+    }
+
+    .workspace-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .workspace-item {
+        padding: 10px;
+    }
+
+    .create-workspace-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .create-workspace-container button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .home-ws-main h1 {
+        font-size: 3rem;
+    }
+
+    .span-hero {
+        font-size: 1.1rem;
+    }
+
+    .workspaces-main-list {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .workspace-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .workspace-item button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .create-workspace-container {
+        padding: 20px;
+    }
+
+    .create-workspace-container button {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .home-ws-main h1 {
+        font-size: 3.5rem;
+    }
+
+    .workspaces-main-list {
+        width: 85%;
+    }
+
+    .create-workspace-container {
+        padding: 30px;
+    }
+
+    .create-workspace-container button {
+        padding: 12px 24px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .home-ws-main h1 {
+        font-size: 4rem;
+    }
+
+    .workspaces-main-list {
+        width: 900px;
+    }
+
+    .create-workspace-container {
+        padding: 40px;
+    }
+
+    .create-workspace-container button {
+        padding: 15px 30px;
+    }
+}

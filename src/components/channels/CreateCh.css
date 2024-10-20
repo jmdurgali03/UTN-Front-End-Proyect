@@ -76,3 +76,68 @@
     font-size: 16px;
     font-weight: lighter;
 }
+
+@media (max-width: 480px) {
+    .channel-input, .form-btns {
+        width: 100%;
+    }
+
+    .toggle-channel-btn {
+        font-size: 14px;
+    }
+
+    .submit-btn, .cancel-btn {
+        font-size: 14px;
+    }
+
+    .error-message {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .channel-input, .form-btns {
+        width: 100%;
+    }
+
+    .submit-btn, .cancel-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .error-message {
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .channel-input {
+        width: 250px;
+    }
+
+    .form-btns {
+        width: 250px;
+    }
+
+    .submit-btn, .cancel-btn {
+        padding: 14px 18px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .channel-input {
+        width: 300px;
+    }
+
+    .form-btns {
+        width: 300px;
+    }
+
+    .submit-btn, .cancel-btn {
+        padding: 16px 20px;
+        font-size: 18px;
+    }
+}
