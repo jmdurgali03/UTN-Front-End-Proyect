@@ -1,0 +1,173 @@
+@import url('../../global.css');
+
+
+body {
+    color: #d1d2d3;
+    margin: 0;
+    padding: 0;
+}
+
+.workspace-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    padding: 10px 14px;
+    background-color: #4A154B;
+}
+
+.workspace-main h2 {
+    font-size: 18px;
+    color: #f8f8f8;
+    padding: 3px 8px;
+    margin-top: 34px;
+}
+
+.workspace-main button {
+    background-color: #611f69;
+    border: none;
+    color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.workspace-main button:hover {
+    background-color: #b33fc0;
+}
+
+.workspace-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.workspace-container-channels-sidebar {
+    position: fixed;
+    background-color: #251329;
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 10px;
+    overflow-y: auto;
+    color: #e3ceebcc;
+    border: 1px solid #611f69;
+    z-index: 900;
+}
+
+.workspace-container-channels-sidebar h4 {
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.channel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.channel-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.workspace-container-channels-sidebar a {
+    color: #d1d2d3;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.workspace-container-channels-sidebar a:hover {
+    background-color: #342439;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.add-channel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+    padding: 8px 12px;
+    border: 2px solid #64598f;
+    color: #64598f; 
+    border-radius: 4px; 
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.add-channel:hover {
+    background-color: #64598f; 
+    color: #ffffff;
+    transform: translateY(-2px); 
+}
+
+.workspace-container-messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1A1D21;
+    padding: 20px;
+    padding-left: 300px;
+    overflow-y: auto;  
+    border-top: 1px solid #611f69;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+.sideber-btn {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #611f69;
+    color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width:320px) and (max-width:640px) {
+    .workspace-container {
+        flex-direction: column;
+    }
+
+    .workspace-container-channels-sidebar.-hidden {
+        display: none;
+    }
+
+    .workspace-container-channels-sidebar.-visible {
+        display: block;
+    }
+
+    .workspace-container-messages {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .workspace-main {
+        display: flex;
+    }
+
+    .sideber-btn {
+        display: inline;
+        position: relative;
+    }
+
+}

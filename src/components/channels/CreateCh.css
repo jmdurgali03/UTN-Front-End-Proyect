@@ -1,0 +1,78 @@
+@import url('../../global.css');
+
+.channel-container {
+    border-radius: 5px;
+}
+
+.toggle-channel-btn {
+    border: none;
+    border-radius: 5px;
+    padding-left: 8px;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color: #d1d2d3;
+}
+
+.new-channel-form {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 12px;
+}
+
+.channel-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solic #ccc;
+    border-radius: 5px;
+    width: 210px;
+    margin-top: 10px;
+}
+
+.form-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 210px;
+}
+
+.submit-btn, .cancel-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.submit-btn {
+    background-color: #751e75;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #e01e5a;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #3f0e3f;
+}
+
+.cancel-btn:hover {
+    background-color: #f14668;
+}
+
+.error-message {
+    color: #ff4d4d;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+}
